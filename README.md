@@ -100,6 +100,6 @@ Similarly to version 1.2, there is a lot of code that needs to be written for th
   - [ ] AES256_GCM_SHA384
   - [ ] AES128_CCM_SHA256
   - [ ] AES256_CCM8_SHA256
-  - [ ] CHACHA20_POLY1305_SHA256
+  - [X] CHACHA20_POLY1305_SHA256 -> https://github.com/SleepingShell/noir-chacha20?tab=readme-ov-file (only chacha20)
 - KEY DERIVATION:
   - [ ] HKDF
