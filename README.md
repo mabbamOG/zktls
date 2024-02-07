@@ -22,19 +22,19 @@ These are the building blocks we need:
 - CIPHER:
   - [ ] RC4_128
   - [ ] 3DES_EDE_CBC
-  - [ ] AES_128_CBC
+  - [X] AES_128_CBC -> https://github.com/TaceoLabs/noir-aes.git (naive?, no CBC!)
   - [ ] AES_256_CBC
 - CERT:
   - [ ] X.509v3 decoder
 - SIGNATURES:
-  - [ ] RSA_PKCS1 (v1.5)
+  - [X] RSA_PKCS1 (v1.5) -> https://github.com/richardliang/noir-rsa.git (up to 2048bits!)
   - [ ] DSA (DSS)
-  - [ ] ECDSA
+  - [X] ECDSA -> https://github.com/colinnielsen/ecrecover-noir.git (only SECP256r1+keccak256)
 - HASH:
   - [ ] MD5
-  - [ ] SHA1
+  - [X] SHA1 -> https://github.com/michaelelliot/noir-sha1
   - [ ] SHA224
-  - [ ] SHA256
+  - [X] SHA256 -> https://github.com/michaelelliot/noir-sha2.git
   - [ ] SHA384
   - [ ] SHA512
 - KEY EXCHANGE:
@@ -61,15 +61,15 @@ Similarly to version 1.2, there is a lot of code that needs to be written for th
   - [ ] PSK (+ (EC)DHE)
 - SIGNATURE:
   - RSA PKCS1
-    - [ ] RSA_PKCS1_SHA256
+    - [X] RSA_PKCS1_SHA256 -> https://github.com/richardliang/noir-rsa.git (max 2048bits!)
     - [ ] RSA_PKCS1_SHA384
     - [ ] RSA_PKCS1_SHA512
   - RSA PSS (RSAE OID + RSASSA-PSS OID)
     - [ ] RSA_PSS_SHA256
     - [ ] RSA_PSS_SHA384
-    - [ ] RSA_PSS_SHA256
+    - [ ] RSA_PSS_SHA512
   - ECDSA
-    - [ ] ECDSA_SECP256r1_SHA256
+    - [X] ECDSA_SECP256r1_SHA256 -> https://github.com/colinnielsen/ecrecover-noir.git
     - [ ] ECDSA_SECP384r1_SHA384
     - [ ] ECDSA_SECP521r1_SHA512
   - edDSA
@@ -88,6 +88,10 @@ Similarly to version 1.2, there is a lot of code that needs to be written for th
     - [ ] FFDHE_4096
     - [ ] FFDHE_6144
     - [ ] FFDHE_8192
+- HASH:
+  - [X] SHA256 -> https://github.com/michaelelliot/noir-sha2.git
+  - [ ] SHA384
+  - [ ] SHA512
 - CERTIFICATE:
   - [ ] RawPublicKey Decoding
   - [ ] X509v3 Decoding
